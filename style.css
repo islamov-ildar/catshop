@@ -1,0 +1,558 @@
+* {
+    font-family: Montserrat, sans-serif;
+    box-sizing: border-box;
+}
+
+* a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+body {
+    margin: 0;
+
+}
+
+._container {
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+header {
+    background: linear-gradient(rgba(31, 32, 33, 0.79), rgba(31, 32, 33, 0.79)),
+    url("images/stephen-leonardi-Al9Cl-b7EFU-unsplash_1.png") no-repeat center;
+    background-size: cover;
+    color: white;
+    width: 100%
+}
+
+header ._container {
+    display: flex;
+    flex-direction: column;
+}
+
+._header-top {
+    margin-top: 26px;
+    display: grid;
+    grid-template-columns: 2fr 4fr 6fr;
+}
+
+._header-top-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+}
+
+._header-top-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    font-size: 18px;
+}
+
+._phone-number {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+._header-bottom {
+    margin-top: 36px;
+    margin-bottom: 66px;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+._sorting {
+    margin-top: 33px;
+    margin-bottom: 32px;
+    display: flex;
+    font-size: 18px;
+    color: #000000;
+}
+
+._sorting a {
+    color: #000000;
+}
+
+._sorting-title {
+    margin-right: 35px;
+    font-weight: bold;
+    padding-top: 5px;
+}
+
+._sorting-option {
+    margin-right: 34px;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+}
+
+._sorting-option:hover {
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+._sorting-option img {
+    margin-left: 14px;
+    margin-bottom: -2px;
+}
+
+._catCard {
+    background: #F3F3F3;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+._catCardImg {
+    position: relative;
+}
+
+._catCardImg img {
+    width: 100%;
+}
+
+._catCardImgDiscount {
+    background: #E52D2D;
+    padding: 9px 18px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 34px;
+    left: 38px;
+    color: #FFFFFF;
+}
+
+._catCardImgLike {
+    position: absolute;
+    top: 34px;
+    right: 32px;
+}
+
+._catCardImgLike:hover {
+    opacity: 1;
+}
+
+._catCardDescTitle {
+    font-weight: bold;
+    font-size: 24px;
+    margin-left: 29px;
+    margin-top: 29px;
+}
+
+._catCardDescInfo {
+    margin-top: 22px;
+    margin-left: 29px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 5fr 5fr;
+    font-size: 12px;
+
+}
+
+._catCardDescInfRect {
+    display: inline-block;
+    width: 4px;
+    height: 26px;
+    background: #6EBBD3;
+    box-sizing: border-box;
+}
+
+._catCardDescInfoBold {
+    font-weight: bold;
+}
+
+._catCardDescPrice {
+    margin-left: 29px;
+    margin-top: 22px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+._catCardDescButton {
+    margin-top: 29px;
+    line-height: 65px;
+    background: #6EBBD3;
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+    border: solid 1px black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+._catCardDescButton:hover, ._showMoreButton:hover, ._subscribeForm button:hover {
+    background: #4caac7;
+    color: #ffffff;
+}
+
+._catCardDescButton._blackButtonBackground:hover {
+    background-color: #4b4e52;
+}
+
+._sectionCatCards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+
+._lowOpacity {
+    opacity: 50%;
+}
+
+._hiddenDiscount {
+    display: none;
+}
+
+._blackButtonBackground {
+    background-color: #1F2021;
+}
+
+._showMoreButton {
+    margin: 68px auto 0 auto;
+    text-align: center;
+    line-height: 65px;
+    border: 1px solid #CACACA;
+    box-sizing: border-box;
+    border-radius: 10px;
+    width: 380px;
+    font-size: 14px;
+    color: black;
+}
+
+._sectionUnderCatCards {
+    position: relative;
+}
+
+._arrowUpWhite {
+    width: 59px;
+    height: 59px;
+    background-color: #6EBBD3;
+    text-align: center;
+    line-height: 65px;
+    position: absolute;
+    right: 0;
+    top: 35px;
+}
+
+._arrowUpWhite:hover {
+    background-color: black;
+}
+
+footer {
+    background-color: #1F2021;
+    position: relative;
+    color: #FFFFFF;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 5fr 1fr;
+}
+
+._footerText {
+    grid-column-start: 2;
+}
+
+._footerTextTitle {
+    font-weight: bold;
+    font-size: 48px;
+    margin-top: 83px;
+}
+
+._footerTextContent {
+    font-size: 28px;
+    margin-top: 26px;
+    margin-bottom: 92px;
+    line-height: 91.2%;
+}
+
+._beforeFooter {
+    margin-top: 83px;
+}
+
+._footerSubscribe {
+    grid-column-start: 4;
+    margin-top: 91px;
+}
+
+._subscribeForm form {
+    display: flex;
+    flex-direction: row;
+}
+
+._subscribeForm {
+    margin-bottom: 24px;
+}
+
+._subscribeForm input {
+    width: 264px;
+    height: 64px;
+    border: none;
+    border-radius: 10px;
+    padding-left: 33px;
+    font-size: 14px;
+    margin-right: 16px;
+}
+
+._subscribeForm button {
+    width: 250px;
+    height: 65px;
+    background: #6EBBD3;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    color: #FFFFFF;
+}
+
+._subscribeCheckBox {
+    font-size: 14px;
+}
+
+._customCheckBox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+._customCheckBox + label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+._customCheckBox + label::before {
+    content: '';
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #ffffff;
+    border-radius: 3px;
+    margin-right: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+._customCheckBox:checked + label::before {
+    border-color: #6EBBD3;
+    background-color: #6EBBD3;
+    background-image: url("images/check-mark_1.svg");
+}
+
+._subscribeCheckBox label:hover {
+    text-shadow: white 0 0 3px;
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        margin: 4px;
+    }
+
+    ._sectionCatCards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    header ._container {
+        padding: 10px
+    }
+
+    footer {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-column-start: 1;
+        grid-row-start: 1;
+        justify-items: center;
+    }
+
+    ._footerText {
+        grid-column-start: 1;
+    }
+
+    ._footerSubscribe {
+        grid-column-start: 1;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+
+    ._subscribeForm form {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    ._subscribeCheckBox {
+        display: flex;
+        justify-content: center;
+    }
+
+    ._footerTextTitle {
+        margin-top: 10px;
+    }
+
+    ._footerTextContent {
+        margin-top: 8px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    ._sectionCatCards {
+        grid-template-columns: 1fr;
+    }
+
+
+    ._catCard {
+        width: 100%;
+    }
+
+    footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        justify-items: center;
+    }
+
+    ._footerText {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+
+    ._footerSubscribe {
+        grid-column-start: 1;
+        grid-row-start: 2;
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+    }
+
+    ._footerTextTitle {
+        margin-top: 18px;
+    }
+
+    ._footerTextContent {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    ._subscribeForm form {
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    ._subscribeForm button {
+        width: 264px;
+        margin-top: 10px;
+    }
+
+    ._subscribeForm input {
+        margin-right: 0;
+    }
+
+    ._sorting {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    ._sorting-option, ._sorting-title {
+        margin-right: 0;
+    }
+
+    ._sorting-title {
+        margin-bottom: 10px;
+    }
+
+    ._header-top {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 2fr;
+        justify-items: center;
+        gap: 20px;
+    }
+
+    ._header-bottom {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    ._phone-number-text, ._phone-number {
+        font-size: 14px;
+    }
+
+    ._header-top-contacts {
+        margin-top: 20px;
+    }
+
+    ._arrowUpWhite {
+        top: 77px;
+    }
+}
+
+@media screen and (min-width: 550px) and (max-width: 767px) {
+    ._header-top-menu {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    ._header-top {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    ._subscribeForm form {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    ._subscribeForm button {
+        width: 264px;
+        margin-top: 0;
+        margin-left: 5px;
+    }
+
+    ._subscribeCheckBox {
+        display: flex;
+        justify-content: center;
+    }
+
+    footer {
+        grid-template-rows: 1fr 1fr;
+    }
+
+    ._catCardDescTitle {
+        font-size: 30px;
+    }
+
+    ._catCardDescInfo {
+        font-size: 18px;
+    }
+
+    ._catCardDescInfRect {
+        height: 44px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    ._header-top-menu {
+        flex-direction: column;
+    }
+
+    ._showMoreButton {
+        width: 285px;
+    }
+
+    ._footerText {
+        text-align: center;
+    }
+
+    footer {
+        grid-template-rows: 1fr;
+    }
+}
+
+
+
