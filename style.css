@@ -95,6 +95,7 @@ header ._container {
 ._sorting-option:hover {
     border: 1px solid #000000;
     border-radius: 10px;
+    transition-duration: 0.5s
 }
 
 ._sorting-option img {
@@ -135,6 +136,7 @@ header ._container {
 
 ._catCardImgLike:hover {
     opacity: 1;
+    transition-duration: 0.5s
 }
 
 ._catCardDescTitle {
@@ -188,10 +190,12 @@ header ._container {
 ._catCardDescButton:hover, ._showMoreButton:hover, ._subscribeForm button:hover {
     background: #4caac7;
     color: #ffffff;
+    transition-duration: 0.5s
 }
 
 ._catCardDescButton._blackButtonBackground:hover {
     background-color: #4b4e52;
+    transition-duration: 0.5s
 }
 
 ._sectionCatCards {
@@ -242,6 +246,7 @@ header ._container {
 
 ._arrowUpWhite:hover {
     background-color: black;
+    transition-duration: 0.5s
 }
 
 footer {
@@ -347,6 +352,7 @@ footer {
 
 ._subscribeCheckBox label:hover {
     text-shadow: white 0 0 3px;
+    transition-duration: 0.5s
 }
 
 @media screen and (max-width: 1024px) {
@@ -391,7 +397,7 @@ footer {
     }
 
     ._footerTextTitle {
-        margin-top: 10px;
+        margin-top: 15px;
     }
 
     ._footerTextContent {
