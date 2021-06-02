@@ -38,13 +38,13 @@
 <main class="_container">
     <div class="_sorting">
         <div class="_sorting-title">Сортировать по:</div>
-        <a href="#">
+        <a href="#" id="priceSort">
             <div class="_sorting-option">
                 <div>Цене</div>
                 <div><img src="images/arrow_down.png" alt=""></div>
             </div>
         </a>
-        <a href="#">
+        <a href="#" id="ageSort">
             <div class="_sorting-option">
                 <div>Возрасту</div>
                 <div><img src="images/arrow_down.png" alt=""></div>
@@ -52,11 +52,11 @@
         </a>
     </div>
     <div class="_sectionCatCards">
-        <div class="_catCard">
+        <div class="_catCard" data-price="30000" data-age="6">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount">-40%</div>
                 <a href="#">
-                    <div class="_catCardImgLike _lowOpacity"><img src="images/like_1.png" alt=""></div>
+                    <div class="_catCardImgLike _lowOpacity" id="1"><img src="images/like_1.png" alt=""></div>
                 </a>
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_1.jpg" alt="">
             </div>
@@ -65,7 +65,7 @@
                 <div class="_catCardDescInfo">
                     <div class="_catCardDescInfRect"></div>
                     <div class="_catCardDescInfColor">Коричневый<br>окрас</div>
-                    <div><span class="_catCardDescInfoBold">2 мес.</span><br>Возраст</div>
+                    <div><span class="_catCardDescInfoBold">6 мес.</span><br>Возраст</div>
                     <div><span class="_catCardDescInfoBold">4</span><br>Кол-во лап</div>
                 </div>
                 <div class="_catCardDescPrice">30 000 руб.</div>
@@ -74,11 +74,11 @@
                 </a>
             </div>
         </div>
-        <div class="_catCard">
+        <div class="_catCard" data-price="40000" data-age="1">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount _hiddenDiscount">-40%</div>
                 <a href="#">
-                    <div class="_catCardImgLike"><img src="images/like_1.png" alt=""></div>
+                    <div class="_catCardImgLike" id="2"><img src="images/like_1.png" alt=""></div>
                 </a>
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_2.png" alt="">
             </div>
@@ -87,7 +87,7 @@
                 <div class="_catCardDescInfo">
                     <div class="_catCardDescInfRect"></div>
                     <div class="_catCardDescInfColor">Коричневый<br>окрас</div>
-                    <div><span class="_catCardDescInfoBold">2 мес.</span><br>Возраст</div>
+                    <div><span class="_catCardDescInfoBold">1 мес.</span><br>Возраст</div>
                     <div><span class="_catCardDescInfoBold">4</span><br>Кол-во лап</div>
                 </div>
                 <div class="_catCardDescPrice">40 000 руб.</div>
@@ -96,11 +96,11 @@
                 </a>
             </div>
         </div>
-        <div class="_catCard">
+        <div class="_catCard" data-price="20000" data-age="5">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount _hiddenDiscount">-40%</div>
                 <a href="#">
-                    <div class="_catCardImgLike _lowOpacity"><img src="images/like_1.png" alt=""></div>
+                    <div class="_catCardImgLike _lowOpacity" id="3"><img src="images/like_1.png" alt=""></div>
                 </a>
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_3.png" alt="">
             </div>
@@ -109,7 +109,7 @@
                 <div class="_catCardDescInfo">
                     <div class="_catCardDescInfRect"></div>
                     <div class="_catCardDescInfColor">Коричневый<br>окрас</div>
-                    <div><span class="_catCardDescInfoBold">2 мес.</span><br>Возраст</div>
+                    <div><span class="_catCardDescInfoBold">5 мес.</span><br>Возраст</div>
                     <div><span class="_catCardDescInfoBold">4</span><br>Кол-во лап</div>
                 </div>
                 <div class="_catCardDescPrice">20 000 руб.</div>
@@ -118,11 +118,11 @@
                 </a>
             </div>
         </div>
-        <div class="_catCard">
+        <div class="_catCard" data-price="25000" data-age="2">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount _hiddenDiscount">-40%</div>
                 <a href="#">
-                    <div class="_catCardImgLike _lowOpacity"><img src="images/like_1.png" alt=""></div>
+                    <div class="_catCardImgLike _lowOpacity" id="4"><img src="images/like_1.png" alt=""></div>
                 </a>
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_1.jpg" alt="">
             </div>
@@ -140,11 +140,11 @@
                 </a>
             </div>
         </div>
-        <div class="_catCard">
+        <div class="_catCard" data-price="30000" data-age="4">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount">-40%</div>
                 <a href="#">
-                    <div class="_catCardImgLike _lowOpacity"><img src="images/like_1.png" alt=""></div>
+                    <div class="_catCardImgLike _lowOpacity" id="5"><img src="images/like_1.png" alt=""></div>
                 </a>
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_3.png" alt="">
             </div>
@@ -153,7 +153,7 @@
                 <div class="_catCardDescInfo">
                     <div class="_catCardDescInfRect"></div>
                     <div class="_catCardDescInfColor">Коричневый<br>окрас</div>
-                    <div><span class="_catCardDescInfoBold">2 мес.</span><br>Возраст</div>
+                    <div><span class="_catCardDescInfoBold">4 мес.</span><br>Возраст</div>
                     <div><span class="_catCardDescInfoBold">4</span><br>Кол-во лап</div>
                 </div>
                 <div class="_catCardDescPrice">30 000 руб.</div>
@@ -162,11 +162,11 @@
                 </a>
             </div>
         </div>
-        <div class="_catCard">
+        <div class="_catCard" data-price="10000" data-age="3">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount _hiddenDiscount">-40%</div>
                 <a href="#">
-                    <div class="_catCardImgLike"><img src="images/like_1.png" alt=""></div>
+                    <div class="_catCardImgLike" id="6"><img src="images/like_1.png" alt=""></div>
                 </a>
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_2.png" alt="">
             </div>
@@ -175,7 +175,7 @@
                 <div class="_catCardDescInfo">
                     <div class="_catCardDescInfRect"></div>
                     <div class="_catCardDescInfColor">Коричневый<br>окрас</div>
-                    <div><span class="_catCardDescInfoBold">2 мес.</span><br>Возраст</div>
+                    <div><span class="_catCardDescInfoBold">3 мес.</span><br>Возраст</div>
                     <div><span class="_catCardDescInfoBold">4</span><br>Кол-во лап</div>
                 </div>
                 <div class="_catCardDescPrice">10 000 руб.</div>
@@ -192,7 +192,7 @@
             </div>
         </a>
         <a href="">
-            <div class="_arrowUpWhite"><img src="images/arrow_up_white.png" alt=""></div>
+            <div class="_arrowUpWhite _invisible"><img src="images/arrow_up_white.png" alt=""></div>
         </a>
     </div>
 </main>
@@ -204,8 +204,8 @@
     </div>
     <div class="_footerSubscribe">
         <div class="_subscribeForm">
-            <form action="#">
-                <input type="email" placeholder="Email">
+            <form action="#" id="registration">
+                <input type="email"  placeholder="Email">
                 <button type="submit">
                     Подписаться
                 </button>
@@ -219,5 +219,84 @@
         </div>
     </div>
 </footer>
+
+<script
+        src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+        crossorigin="anonymous">
+</script>
+
+<script>
+    //Сортировка
+    let sorting = function (dataAttrib) {
+        let items = $('._sectionCatCards ._catCard');
+        let arItems = $.makeArray(items);
+        arItems .sort(function(a, b) {
+            return $(a).data(dataAttrib) - $(b).data(dataAttrib)
+        });
+        $(arItems).appendTo("._sectionCatCards");
+    }
+
+    $("#priceSort").click(function() {sorting("price")})
+
+    $("#ageSort").click(function() {sorting("age")})
+
+
+    $("._arrowUpWhite").click(function () {
+        $('html, body').animate({scrollTop: 0},500);
+        return false;
+    })
+
+    //Функционал сокрытия кнопки "наверх"
+    window.onscroll = function() {
+        let posTop = (window.pageYOffset !== undefined) ? window.pageYOffset : (document.documentElement || document.body.parentNode || document.body).scrollTop;
+
+        if ((posTop !== 0 && innerWidth >= 1024) || (posTop > 200)) {
+            $("._arrowUpWhite").removeClass("_invisible");
+        } else {
+            $("._arrowUpWhite").addClass("_invisible");
+        }
+        if ((innerHeight + window.scrollY) > document.body.clientHeight - 200) {
+            $("._arrowUpWhite").addClass("_invisible");
+        }
+    }
+    //Валидация формы
+    $('#registration input[type=email]').on('blur', function () {
+        let email = $(this).val();
+
+        let testEmail = /^[A-Z0-9._%+-]+@([A-Z0-9-]+\.)+[A-Z]{2,4}$/i;
+
+        let emailField = $('#registration input');
+        if (testEmail.test(email)) {
+            emailField.removeClass("_formIsBlank");
+            emailField.removeClass("_formInValid");
+            emailField.addClass("_formValid");
+        } else {
+            emailField.removeClass("_formIsBlank");
+            emailField.removeClass("_formValid");
+            emailField.addClass("_formInValid");
+            alert("email введен не корректно")
+        }
+        if (email == []) {
+            emailField.removeClass("_formValid");
+            emailField.removeClass("_formInValid");
+            emailField.addClass("_formIsBlank");
+        }
+    });
+
+    //Сообщение клика по лайку
+    $("._catCardImgLike").click(function() {
+
+        if ($(this).hasClass("_lowOpacity")) {
+            $(this).removeClass("_lowOpacity");
+            alert("Добавлено в избранное")
+        } else {
+            $(this).addClass("_lowOpacity");
+        }
+
+        return false;
+    })
+
+</script>
 </body>
 </html>

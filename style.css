@@ -10,7 +10,6 @@
 
 body {
     margin: 0;
-
 }
 
 ._container {
@@ -96,6 +95,12 @@ header ._container {
     border: 1px solid #000000;
     border-radius: 10px;
     transition-duration: 0.5s
+}
+
+._invisible {
+    display: none;
+    transition-duration: 0.5s
+
 }
 
 ._sorting-option img {
@@ -239,9 +244,11 @@ header ._container {
     background-color: #6EBBD3;
     text-align: center;
     line-height: 65px;
-    position: absolute;
-    right: 0;
-    top: 35px;
+    position: fixed;
+    right: 4px;
+    /*top: 35px;*/
+    bottom: 80px;
+    z-index: 101;
 }
 
 ._arrowUpWhite:hover {
@@ -350,9 +357,25 @@ footer {
     background-image: url("images/check-mark_1.svg");
 }
 
-._subscribeCheckBox label:hover {
-    text-shadow: white 0 0 3px;
+._subscribeCheckBox label:hover, ._header-top-menu a>div:hover {
+    text-shadow: white 0 0 4px;
     transition-duration: 0.5s
+}
+
+._formValid {
+    background-color: #ccffcc;
+}
+._formInValid {
+    background-color: #ff9785;
+}
+._formIsBlank {
+    background-color: #ffffff;
+}
+
+@media screen and (min-width: 1281px){
+    ._arrowUpWhite {
+        right: calc((100vw - 1280px) / 2);
+    }
 }
 
 @media screen and (max-width: 1024px) {
@@ -493,9 +516,9 @@ footer {
         margin-top: 20px;
     }
 
-    ._arrowUpWhite {
-        top: 77px;
-    }
+    /*._arrowUpWhite {*/
+    /*    top: 77px;*/
+    /*}*/
 }
 
 @media screen and (min-width: 550px) and (max-width: 767px) {
@@ -559,6 +582,7 @@ footer {
         grid-template-rows: 1fr;
     }
 }
+
 
 
 
