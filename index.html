@@ -10,19 +10,19 @@
 <header>
     <div class="_container">
         <div class="_header-top">
-            <div class="_companyLabel"><img src="images/barcelona-metro-logo_1.png" alt=""></div>
+            <div class="_companyLabel"><a href="#"><img src="images/barcelona-metro-logo_1.png" alt=""></a></div>
             <div class="_header-top-menu">
                 <a href="#">
-                    <div>Main</div>
+                    Main
                 </a>
                 <a href="#">
-                    <div>Gallery</div>
+                    Gallery
                 </a>
                 <a href="#">
-                    <div>News</div>
+                    News
                 </a>
                 <a href="#">
-                    <div>Profile</div>
+                    Profile
                 </a>
             </div>
             <div class="_header-top-contacts">
@@ -31,33 +31,29 @@
             </div>
         </div>
         <div class="_header-bottom">
-            <div>Найдено 349 котов</div>
+            <div><a name="top"></a>Найдено 349 котов</div>
         </div>
     </div>
 </header>
 <main class="_container">
     <div class="_sorting">
         <div class="_sorting-title">Сортировать по:</div>
-        <a href="#" id="priceSort">
-            <div class="_sorting-option">
+            <div class="_sorting-option" id="priceSort">
                 <div>Цене</div>
-                <div><img src="images/arrow_down.png" alt=""></div>
+                <div><img class="_sortArrow" src="images/arrow_down.png" alt=""></div>
             </div>
-        </a>
-        <a href="#" id="ageSort">
-            <div class="_sorting-option">
+            <div class="_sorting-option" id="ageSort">
                 <div>Возрасту</div>
-                <div><img src="images/arrow_down.png" alt=""></div>
+                <div><img class="_sortArrow" src="images/arrow_down.png" alt=""></div>
             </div>
-        </a>
     </div>
     <div class="_sectionCatCards">
         <div class="_catCard" data-price="30000" data-age="6">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount">-40%</div>
-                <a href="#">
+
                     <div class="_catCardImgLike _lowOpacity" id="1"><img src="images/like_1.png" alt=""></div>
-                </a>
+
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_1.jpg" alt="">
             </div>
             <div class="_catCardDescription">
@@ -77,9 +73,9 @@
         <div class="_catCard" data-price="40000" data-age="1">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount _hiddenDiscount">-40%</div>
-                <a href="#">
+
                     <div class="_catCardImgLike" id="2"><img src="images/like_1.png" alt=""></div>
-                </a>
+
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_2.png" alt="">
             </div>
             <div class="_catCardDescription">
@@ -99,9 +95,9 @@
         <div class="_catCard" data-price="20000" data-age="5">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount _hiddenDiscount">-40%</div>
-                <a href="#">
+
                     <div class="_catCardImgLike _lowOpacity" id="3"><img src="images/like_1.png" alt=""></div>
-                </a>
+
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_3.png" alt="">
             </div>
             <div class="_catCardDescription">
@@ -121,9 +117,9 @@
         <div class="_catCard" data-price="25000" data-age="2">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount _hiddenDiscount">-40%</div>
-                <a href="#">
+
                     <div class="_catCardImgLike _lowOpacity" id="4"><img src="images/like_1.png" alt=""></div>
-                </a>
+
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_1.jpg" alt="">
             </div>
             <div class="_catCardDescription">
@@ -143,9 +139,9 @@
         <div class="_catCard" data-price="30000" data-age="4">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount">-40%</div>
-                <a href="#">
+
                     <div class="_catCardImgLike _lowOpacity" id="5"><img src="images/like_1.png" alt=""></div>
-                </a>
+
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_3.png" alt="">
             </div>
             <div class="_catCardDescription">
@@ -165,9 +161,9 @@
         <div class="_catCard" data-price="10000" data-age="3">
             <div class="_catCardImg">
                 <div class="_catCardImgDiscount _hiddenDiscount">-40%</div>
-                <a href="#">
+
                     <div class="_catCardImgLike" id="6"><img src="images/like_1.png" alt=""></div>
-                </a>
+
                 <img src="images/jason-briscoe-UV81E0oXXWQ-unsplash_2.png" alt="">
             </div>
             <div class="_catCardDescription">
@@ -186,12 +182,12 @@
         </div>
     </div>
     <div class="_sectionUnderCatCards">
-        <a href="">
+
             <div class="_showMoreButton">
                 Показать ещё 20
             </div>
-        </a>
-        <a href="">
+
+        <a href="#top">
             <div class="_arrowUpWhite _invisible"><img src="images/arrow_up_white.png" alt=""></div>
         </a>
     </div>
@@ -228,18 +224,48 @@
 
 <script>
     //Сортировка
-    let sorting = function (dataAttrib) {
+    let sortingIncrease = function (dataAttrib) {
         let items = $('._sectionCatCards ._catCard');
         let arItems = $.makeArray(items);
-        arItems .sort(function(a, b) {
+        arItems.sort(function(a, b) {
             return $(a).data(dataAttrib) - $(b).data(dataAttrib)
         });
         $(arItems).appendTo("._sectionCatCards");
     }
 
-    $("#priceSort").click(function() {sorting("price")})
+    let sortingDecrease = function (dataAttrib) {
+        let items = $('._sectionCatCards ._catCard');
+        let arItems = $.makeArray(items);
+        arItems.sort(function(a, b) {
+            return $(b).data(dataAttrib) - $(a).data(dataAttrib)
+        });
+        $(arItems).appendTo("._sectionCatCards");
+    }
 
-    $("#ageSort").click(function() {sorting("age")})
+    $("#priceSort").click(function() {
+        if (!$("#priceSort").hasClass("._increaseSorting")) {
+            sortingIncrease("price")
+            $(this).find("._sortArrow").addClass("_rotateImg");
+            $(this).addClass("._increaseSorting")
+        } else {
+            sortingDecrease("price")
+            $(this).find("._sortArrow").removeClass("_rotateImg");
+            $(this).removeClass("._increaseSorting")
+        }
+
+    })
+
+    $("#ageSort").click(function() {
+        if (!$("#ageSort").hasClass("._increaseSorting")) {
+            sortingIncrease("age")
+            $(this).find("._sortArrow").addClass("_rotateImg");
+            $(this).addClass("._increaseSorting")
+        } else {
+            sortingDecrease("age")
+            $(this).find("._sortArrow").removeClass("_rotateImg");
+            $(this).removeClass("._increaseSorting")
+        }
+    })
 
 
     $("._arrowUpWhite").click(function () {
@@ -256,8 +282,13 @@
         } else {
             $("._arrowUpWhite").addClass("_invisible");
         }
-        if ((innerHeight + window.scrollY) > document.body.clientHeight - 200) {
-            $("._arrowUpWhite").addClass("_invisible");
+        if ((innerHeight + window.scrollY) > document.body.clientHeight - 320) {
+            // $("._arrowUpWhite").addClass("_invisible");
+            $("._arrowUpWhite").addClass("_arrowUpWhiteOnBottom");
+        }
+        if ((innerHeight + window.scrollY) < document.body.clientHeight - 350) {
+            // $("._arrowUpWhite").addClass("_invisible");
+            $("._arrowUpWhite").removeClass("_arrowUpWhiteOnBottom");
         }
     }
     //Валидация формы
